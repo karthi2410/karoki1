@@ -5,11 +5,11 @@ import { accessUrl } from "./spotify";
 function Login() {
   return (
     <div className="login">
-      <img
-        src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-        alt=""
-      />
-      <a href={accessUrl}>LOGIN TO SPOTIFY</a>
+     <p>
+       <center><h1>KAROKI</h1>
+       <h3>Come Hear To  Get A Peace</h3></center>
+     </p>
+      <a href={accessUrl}>LOGIN TO Karoki</a>
     </div>
   );
 }

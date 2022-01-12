@@ -13,11 +13,10 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <img
-        className="sidebar__logo"
-        src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-        alt=""
-      />
+      <p className="sidebar__logo">
+        <h1> karoki </h1>
+      </p>
+     
       <SidebarOption Icon={HomeIcon} option="Home" />
       <SidebarOption Icon={SearchIcon} option="Search" />
       <SidebarOption Icon={LibraryMusicIcon} option="Your Library" />

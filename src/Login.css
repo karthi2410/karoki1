@@ -8,6 +8,13 @@
 .login > img {
   height: 200px;
 }
+.login > p {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 99px;
+  font-weight: 800;
+}
 
 .login > a {
   color: white;

@@ -7,16 +7,16 @@ import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
-function Body({ spotify }) {
+function Body({ Karoki }) {
   const [{ discover_weekly }, dispatch] = useStateValue();
 
   const playPlaylist = (id) => {
-    spotify
+    Karoki
       .play({
-        context_uri: `spotify:playlist:37i9dQZEVXcJZyENOWUFo7`,
+        context_uri: `karoki:playlist:37i9dQZEVXcJZyENOWUFo7`,
       })
       .then((res) => {
-        spotify.getMyCurrentPlayingTrack().then((r) => {
+        Karoki.getMyCurrentPlayingTrack().then((r) => {
           dispatch({
             type: "SET_ITEM",
             item: r.item,
@@ -30,12 +30,12 @@ function Body({ spotify }) {
   };
 
   const playSong = (id) => {
-    spotify
+    Karoki
       .play({
-        uris: [`spotify:track:${id}`],
+        uris: [`Karoki:track:${id}`],
       })
       .then((res) => {
-        spotify.getMyCurrentPlayingTrack().then((r) => {
+        Karoki.getMyCurrentPlayingTrack().then((r) => {
           dispatch({
             type: "SET_ITEM",
             item: r.item,
@@ -50,7 +50,7 @@ function Body({ spotify }) {
 
   return (
     <div className="body">
-      <Header spotify={spotify} />
+      <Header Karoki={Karoki} />
 
       <div className="body__info">
         <img src={discover_weekly?.images[0].url} alt="" />

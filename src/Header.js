@@ -5,7 +5,7 @@ import { Avatar } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import { useEffect } from "react";
 
-function Header({ spotify }) {
+function Header({ Karoki }) {
   const [{ user }, dispatch] = useStateValue();
 
   return (
