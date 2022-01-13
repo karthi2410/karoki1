@@ -1,6 +1,6 @@
 import React from "react";
 import "./SongRow.css";
-import app"";
+
 function SongRow({ track, playSong }) {
   console.log(track);
   return (
