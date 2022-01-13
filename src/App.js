@@ -5,7 +5,7 @@ import Player from "./Player";
 import { getTokenFromResponse } from "./spotify";
 import "./App.css";
 import Login from "./Login";
-
+import app"";
 const s = new SpotifyWebApi();
 
 function App() {
