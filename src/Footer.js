@@ -9,6 +9,7 @@ import VolumeDownIcon from "@material-ui/icons/VolumeDown";
 import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import "./Footer.css";
+import app"";
 import { Grid, Slider } from "@material-ui/core";
 
 function Footer({ spotify }) {
