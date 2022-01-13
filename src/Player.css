@@ -1,5 +1,5 @@
 .player {
-  display: flex;
+  display: flx;
   flex-direction: column;
 }
 
